@@ -7,8 +7,6 @@ Repositório dedicado a atividades relacionadas à disciplina de grafos
 **Objetivo:** Implementar um protótipo de software com funções para entrada de dados e saída dos
 resultados, que será usado para realização das atividades práticas durante a disciplina.
 
-<ol>
-
 1. Desenvolver um protótipo de software que faça a leitura do arquivo de uma dada instância,
    mostrar um determinado resultado na tela e salvar em um outro arquivo;
 
@@ -25,4 +23,11 @@ resultados, que será usado para realização das atividades práticas durante a
 5. Como resultado, uma função de saída deverá mostrar na tela e salvar em arquivo o nome da
    instância e a dimensão da respectiva matriz no formato: nome_instância qtd_linhas qtd_colunas.
 
-</ol>
+### Estrutura de pastas
+
+- **files**  - arquivos de entrada e saida
+    - **instances**  - datasets
+    - **results**  - arquivos de resultados
+- **data_inout**  - métodos de input e output de arquivos
+- **processing**  - métodos de processamento dos dados lidos
+- **main.py**  - core da aplicação
