@@ -14,7 +14,8 @@ def read_instance(instace: str) -> np.matrix:
 
     # verifica a existência do diretório dado
     if not os.path.exists(relative):
-        raise Exception("Não existe o diretório: " + str(pl.Path(relative).absolute()))
+        raise Exception("Não existe o diretório: "
+                        + str(pl.Path(relative).absolute()))
 
     # lê cada linha do arquivo, sendo que cada linha é
     with open(relative, "r") as file:

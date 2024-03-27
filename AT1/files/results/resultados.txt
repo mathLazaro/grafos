@@ -1,3 +1,9 @@
 exemplo 	7 	7
 ponte 	4 	4
 zachary 	34 	34
+exemplo 	7 	7 
+ponte 	4 	4 
+zachary 	34 	34 
+exemplo 	7 	7 
+ponte 	4 	4 
+exemplo 	7 	7 

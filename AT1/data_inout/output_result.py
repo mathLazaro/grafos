@@ -9,5 +9,5 @@ def write_result(result: dict):
 
     # printa nome_instancia qtd_linhas qtd_colunas
     print(f'Instância: {result.get("instance")}')
-    print(f'Instância: {result.get("num_rows")}')
-    print(f'Instância: {result.get("num_cols")}')
+    print(f'Número de linhas: {result.get("num_rows")}')
+    print(f'Número de colunas: {result.get("num_cols")}')
