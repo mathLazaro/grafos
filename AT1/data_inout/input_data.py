@@ -21,10 +21,10 @@ def read_instance(instace: str) -> np.matrix:
         for line in file:
             data.append(line.strip().split(" "))
 
-    return _str_to_matrix(data)
+    return _list_to_matrix(data)
 
 
 # Recebe os dados lidos do arquivo e retorna uma matriz
 #   Numpy
-def _str_to_matrix(data: list) -> np.matrix:
+def _list_to_matrix(data: list) -> np.matrix:
     return np.matrix(data, dtype=int)
