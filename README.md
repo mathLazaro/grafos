@@ -113,3 +113,24 @@ adjacência**.
 ### Estrutura de pastas:
 
 Segue a mesma do exercício AT2.
+
+## AT4
+
+**Objetivo:** Implementar funções para o entendimento de conceitos de caminho e conectividade em grafos.
+
+### Funções implementadas:
+
+- ***warshall(matriz)***
+    - *Descrição:* Obtém uma matriz de alcançabilidade a partir de uma matriz de adjacência.
+    - *Saída:* matriz de alcançabilidade (numpy.ndarray)
+
+- ***caminhoEuleriano(matriz)***
+    - *Descrição:* Define se um grafo cumpre os requisitos para ser classificado como euleriano, ou seja, possui um
+      caminho Euleriano.
+    - *Saída:* valor booleano
+
+### Estrutura de pastas:
+
+- *instances* - instâncias
+- *src* - implementações
+- *main.py* - core da aplicação 
