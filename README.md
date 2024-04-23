@@ -27,9 +27,6 @@ resultados, que será usado para realização das atividades práticas durante a
 
 ### Estrutura de pastas
 
-- **files**  - arquivos de entrada e saida
-    - **instances**  - datasets
-    - **results**  - arquivos de resultados
 - **data_inout**  - métodos de input e output de arquivos
 - **processing**  - métodos de processamento dos dados lidos
 - **main.py**  - core da aplicação
@@ -68,11 +65,8 @@ adjacência**.
 
 ### Estrutura de pastas
 
-- **files**  - arquivos de entrada e saida
-    - **instances**  - datasets
-    - **results**  - log de resultado
 - **data_inout**  - métodos de input e output de arquivos
-- **functions**  - funções de manipulação de grafo
+- **processing**  - funções de manipulação de grafo
 - **main.py**  - core da aplicação
 
 <hr>
@@ -131,6 +125,20 @@ Segue a mesma do exercício AT2.
 
 ### Estrutura de pastas:
 
-- *instances* - instâncias
-- *src* - implementações
+- *processing* - implementações
+- *main.py* - core da aplicação
+
+## AT5
+
+**Objetivo:** Implementar uma função de busca em largura.
+
+### Funções implementadas:
+
+- ***BFS(listaAdj, v)***
+    - *Descrição:* Busca em largura de um grafo retornando a sequência dos vértices visitados.
+    - *Saída:* sequência de vértices (tipo List)
+
+### Estrutura de pastas:
+
+- *processing* - implementações
 - *main.py* - core da aplicação 
