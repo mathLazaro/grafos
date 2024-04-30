@@ -19,6 +19,7 @@ def bfs(G: dict, v: int):
             for vert in vert_analisados.keys():
                 if not vert_analisados[vert]:
                     q.append(vert)
+                    break
 
     return sequencia
 

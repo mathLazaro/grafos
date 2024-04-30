@@ -17,6 +17,6 @@ def read_instance(instance: str) -> list:
     # lê cada linha do arquivo, sendo que cada linha é
     with open(relative, "r") as file:
         for line in file:
-            data.append(line.strip().split(" "))
+            data.append([int(i) for i in line.strip().split(" ")])
 
     return data
