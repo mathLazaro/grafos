@@ -114,6 +114,48 @@ def verificaDAG(graph: dict):
     print('DAG')
 
 
+# algoritmo que descobre os vértices de grau de entrada 0
+def _find_sources(graph: dict):
+    vertices = {i: True for i in range(len(graph))}
+    edges = set()
+
+    for v in graph.keys():
+        for u in graph.get(v):
+            vertices[u] = False
+            edges.add((v, u))
+
+    return list(filter(lambda x: vertices[x] is True, vertices.keys()))
+
+
+def is_source(graph: dict, vertice: int) -> bool:
+    for v in graph.keys():
+        for u in graph.get(v):
+            if u == vertice:
+                return False
+    return True
+
+
+def kahn(graph: dict):
+    edges = {i : list.copy(graph.get(i)) for i in graph.keys()}  # arestas do grafo
+    res = []  # conterá os elementos da ordenação topológica
+    source = _find_sources(graph)  # fila de vértices source
+
+    while len(source) != 0:
+        v = source.pop(0)
+        res.append(v)
+        for u in graph.get(v):
+            edges[v].remove(u)
+            if is_source(edges, u):
+                source.append(u)
+        if len(edges.get(v)) == 0:
+            edges.pop(v)
+
+    if len(edges) != 0:
+        return 'NOT DAG'
+    else:
+        return res
+
+
 if __name__ == '__main__':
     d = {0: [1, 3], 1: [4], 2: [4, 5], 3: [], 4: [3], 5: []}
-    print(verificaDAG(d))
+    print(kahn(d))
